@@ -121,7 +121,53 @@ section#map-section {
 
 footer {
   padding-top: 10px;
-  background-color: whitesmoke; }
+  background-color: #fff; 
+}
+
+footer p {
+  font-family: freight-sans-pro, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  font-size: .9rem;
+  text-align: center;
+  clear: both;
+  color: #364350;
+  line-height: 1.6;
+}
+
+footer p.address {
+  padding: .5rem 0;
+}
+
+footer p.site-title {
+  letter-spacing: .15em;
+  font-weight: 500;
+  border: 1px solid #364350;
+  font-size: 1rem;
+  max-width: 300px;
+  padding: .5rem 0;
+  margin: 2rem auto 0;
+}
+
+footer span.billionaires {
+  display: block;
+  margin: 1rem auto 3rem;
+  width: 197px;
+  height: 33px;
+  background-size: 197px 33px;
+  text-indent: -9999em;
+  overflow: hidden;
+  color: transparent;
+  background-repeat: no-repeat;
+}
+
+footer span.billionaires svg {
+  width: 100%;
+  display: block;
+  fill: #147FD7;
+}
 
 /* For Phones! */
 @media only screen and (min-width: 320px) and (max-width: 720px) {

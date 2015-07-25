@@ -11,6 +11,8 @@
 <meta property="og:title" content="<?php echo isset($title) ? $title : "Map of Grassroot Events for Bernie Sanders - Discover events and meetups near you | Bernie Sanders 2016 Events"; ?>"/>
 <meta property="og:description" content="<?php echo isset($description) ? $description : "This Map shows all upcoming meetups and events around the United States. Discover all events near you and meet other people who want to make the country better. Discuss plans, organize events, and strategize locally and nationally on how to get Bernie Sanders to the White House." ?>"/>
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,800">
+<script src="//use.typekit.net/vga4irg.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
 <title><?php echo isset($title) ? $title : "Map of Grassroot Events for Bernie Sanders - Discover events and meetups near you | Bernie Sanders 2016 Events"; ?></title>
 <link rel="shortcut icon" href="http://www.bernie2016events.org/favicon.ico">
 </head>
