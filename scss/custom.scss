@@ -32,7 +32,9 @@ h5.page-subtitle {
 div#header {
   padding: 0.5% 1% 1%;
   a#header-logo {
-    float: left;
+    position: absolute;
+    left: 1%;
+    top: 5px;
     img {
       height: 50px;
     }
@@ -115,29 +117,11 @@ a {
     display: inline-block;
 
     &.contribute-nav{
-      float: right;
+      position: absolute;
+      right: 1%;
+      top: 1%;
     }
 
-    &.contribute-big {
-      font-weight: bold;
-      font-size: 12px;
-      background-color: #F55B5B;
-      padding: 12px 32px;
-      letter-spacing: 0.15em;
-
-      border-radius: 3px;
-      padding: 0.7rem 1.7rem;
-
-
-      &:hover {
-        text-decoration: none;
-        background-color: $red;
-        color: white;
-      }
-
-
-
-    }
   }
 
   &.button-rsvp {
@@ -359,14 +343,7 @@ $phone-max-width: 720px;
       margin-top: 0.7em;
     }
     a#header-logo {
-      // display: inline-block;
-      text-align: center;
-      position: relative !important;
-
       img  {
-        float: none !important;
-        margin-left: 10px;
-        height: 35px !important;
       }
     }
     nav {
@@ -397,4 +374,51 @@ $phone-max-width: 720px;
         }
       }
     }
+}
+
+@media only screen and (min-width: 580px){
+  
+  a.contribute {
+    font-weight: bold;
+    font-size: 12px;
+    background-color: #F55B5B;
+    padding: 12px 32px;
+    letter-spacing: 0.15em;
+    border-radius: 3px;
+    padding: 0.7rem 1.7rem;
+
+    &:hover {
+      text-decoration: none;
+      background-color: $red;
+      color: white;
+    }
+  }
+
+}
+
+
+@media only screen and (max-width: 579px){
+  a.contribute {
+    padding: 10px 15px;
+  }
+
+  div#header a#header-logo img{
+    height: 35px
+  }
+
+  div.main-title-area{
+    margin: 0 110px 0 95px;
+  }
+}
+
+@media only screen and (max-width: 420px){
+  div.main-title-area{
+    letter-spacing: 0;
+  }
+}
+
+@media only screen and (max-width: 380px){
+  .hide-380{
+    display: none;
+  }
 }

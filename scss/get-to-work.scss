@@ -93,11 +93,27 @@ a.get-to-work {
 
 @media screen and (max-width: 780px){
   
-  .main-title-area strong{
+  div.main-title-area strong{
     display: block;
+    line-height: 1.4em;
+    font-size: 1.3em;
+  }
+
+  .main-title-subtitle{
+    display: none;
   }
 
 }
+
+
+@media screen and (max-width: 580px){
+  
+  div.main-title-area strong{
+    font-size: 0.9em;
+  }
+
+}
+
 
 @media screen and (min-width: 901px){
   .contribute-big{

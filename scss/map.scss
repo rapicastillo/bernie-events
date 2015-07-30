@@ -175,6 +175,7 @@ section#main-title-area {
 }
 
 div.main-title-area {
+  margin: 0 160px 0 120px;
   strong {
     font-size: 1.5em;
     font-weight: normal;
@@ -376,7 +377,6 @@ $phone-max-width: 720px;
   div#header {
     a#header-logo {
       margin-left: 0;
-      width: 100%;
       // float: left;
       img {
         // width: 100%;

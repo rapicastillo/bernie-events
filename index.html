@@ -30,10 +30,10 @@
   <a href='https://secure.actblue.com/contribute/page/lets-go-bernie?refcode=heroku_events' class='contribute contribute-big contribute-nav' target='_blank'>Contribute</a>
 
   <div class='main-title-area'>
-    <div style='margin-bottom: 4px;'>
-      <strong>3,520&nbsp;Organizing Meetings</strong>&nbsp;&nbsp;<strong style='color: #ea504e;'>100,886 RSVPs <span style='font-size: 0.7em'></span><span id="capacity-counter"></span> </strong>
+    <div>
+      <strong>3,520 <span class="hide-380">Organizing</span> Meetings</strong> <strong style='color: #ea504e;'>100,886 RSVPs <span style='font-size: 0.7em'></span><span id="capacity-counter"></span> </strong>
     </div>
-    <span><span>JULY 29 ORGANIZING KICKOFF EVENT</span></span>
+    <span class="main-title-subtitle"><span>JULY 29 ORGANIZING KICKOFF EVENT</span></span>
   </div>
 
 
@@ -64,7 +64,7 @@
           </select>
         </div>
       </div>
-    <a href="https://go.berniesanders.com/page/event/create" class="get-to-work get-to-work-big">ORGANIZE&nbsp;YOUR&nbsp;ACTIVITY</a>
+    <a href="https://go.berniesanders.com/page/s/doors" class="get-to-work get-to-work-big">ORGANIZE&nbsp;YOUR&nbsp;ACTIVITY</a>
   </div>
 </section>
 <footer>
@@ -117,5 +117,13 @@
      }(document, 'script', 'facebook-jssdk'));
   </script>
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  <script>
+    $(function(){
+      $('#activity-select').on('change', function(e){
+        var elem = $('.get-to-work').get(0);
+        $(elem).attr('href', 'https://go.berniesanders.com/page/s/' + $(this).val());
+      }).change();
+    });
+  </script>
 </body>
 </html>

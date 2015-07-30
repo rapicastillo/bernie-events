@@ -118,6 +118,7 @@ section#main-title-area h4 {
     display: inline-block; }
 
 div.main-title-area {
+  margin: 0 160px 0 120px;
   text-align: center;
   padding: 5px 0 0;
   font-weight: normal;
@@ -308,8 +309,7 @@ footer {
     overflow-y: auto; }
 
   div#header a#header-logo {
-    margin-left: 0;
-    width: 100%; }
+    margin-left: 0; }
     div#header a#header-logo img {
       margin-left: 0 !important; }
   div#header nav {

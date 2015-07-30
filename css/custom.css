@@ -25,7 +25,9 @@ h5.page-subtitle {
 div#header {
   padding: 0.5% 1% 1%; }
   div#header a#header-logo {
-    float: left; }
+    position: absolute;
+    left: 1%;
+    top: 5px; }
     div#header a#header-logo img {
       height: 50px; }
   div#header nav {
@@ -90,19 +92,9 @@ a {
     border-radius: 3px;
     display: inline-block; }
     a.contribute.contribute-nav {
-      float: right; }
-    a.contribute.contribute-big {
-      font-weight: bold;
-      font-size: 12px;
-      background-color: #F55B5B;
-      padding: 12px 32px;
-      letter-spacing: 0.15em;
-      border-radius: 3px;
-      padding: 0.7rem 1.7rem; }
-      a.contribute.contribute-big:hover {
-        text-decoration: none;
-        background-color: #ea504e;
-        color: white; }
+      position: absolute;
+      right: 1%;
+      top: 1%; }
   a.button-rsvp {
     background-color: #F55B5B;
     display: inline-block;
@@ -258,13 +250,6 @@ div#social {
   #header li#social-buttons {
     display: block;
     margin-top: 0.7em; }
-  #header a#header-logo {
-    text-align: center;
-    position: relative !important; }
-    #header a#header-logo img {
-      float: none !important;
-      margin-left: 10px;
-      height: 35px !important; }
   #header nav {
     text-align: center !important; }
     #header nav ul li:last-child {
@@ -278,5 +263,33 @@ div#social {
     font-size: 11px !important; }
     nav ul li .contribute-big {
       padding: 3px 5px !important; } }
+@media only screen and (min-width: 580px) {
+  a.contribute {
+    font-weight: bold;
+    font-size: 12px;
+    background-color: #F55B5B;
+    padding: 12px 32px;
+    letter-spacing: 0.15em;
+    border-radius: 3px;
+    padding: 0.7rem 1.7rem; }
+    a.contribute:hover {
+      text-decoration: none;
+      background-color: #ea504e;
+      color: white; } }
+@media only screen and (max-width: 579px) {
+  a.contribute {
+    padding: 10px 15px; }
+
+  div#header a#header-logo img {
+    height: 35px; }
+
+  div.main-title-area {
+    margin: 0 110px 0 95px; } }
+@media only screen and (max-width: 420px) {
+  div.main-title-area {
+    letter-spacing: 0; } }
+@media only screen and (max-width: 380px) {
+  .hide-380 {
+    display: none; } }
 
 /*# sourceMappingURL=custom.css.map */
