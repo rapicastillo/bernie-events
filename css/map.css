@@ -1,12 +1,3 @@
-::-webkit-scrollbar {
-  -webkit-appearance: none;
-  width: 7px; }
-
-::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background-color: rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5); }
-
 #billionaire-logo {
   fill: #147FD7; }
 
@@ -127,9 +118,7 @@ section#main-title-area h4 {
     display: inline-block; }
 
 div.main-title-area {
-  display: inline-block;
-  margin-left: 140px;
-  float: left;
+  text-align: center;
   padding: 5px 0 0;
   font-weight: normal;
   text-transform: uppercase;
@@ -318,20 +307,15 @@ footer {
     overflow-x: hidden;
     overflow-y: auto; }
 
-  footer {
-    display: none !important; }
-
-  div#header {
-    display: none; }
-    div#header a#header-logo {
-      margin-left: 0;
-      width: 100%; }
-      div#header a#header-logo img {
-        margin-left: 0 !important; }
-    div#header nav {
-      display: none; }
-    div#header div.main-title-area {
-      display: none; }
+  div#header a#header-logo {
+    margin-left: 0;
+    width: 100%; }
+    div#header a#header-logo img {
+      margin-left: 0 !important; }
+  div#header nav {
+    position: absolute;
+    right: 0;
+    top: 0; }
 
   #ad-push-banner {
     display: none; }

@@ -31,12 +31,8 @@ h5.page-subtitle {
 */
 div#header {
   padding: 0.5% 1% 1%;
-  border: 1px solid whitesmoke;
-  border-width: 0 0 1px;
   a#header-logo {
-    position: absolute;
-    top: 6px; left: 0;
-    padding: 0.5%;
+    float: left;
     img {
       height: 50px;
     }
@@ -109,6 +105,7 @@ a {
     text-decoration: underline;
   }
   &.contribute {
+    text-transform: uppercase;
     padding: 3px 8px;
     background-color: #ea504e;
     color: white;
@@ -117,6 +114,10 @@ a {
     border-radius: 3px;
     display: inline-block;
 
+    &.contribute-nav{
+      float: right;
+    }
+
     &.contribute-big {
       font-weight: bold;
       font-size: 12px;
@@ -124,7 +125,6 @@ a {
       padding: 12px 32px;
       letter-spacing: 0.15em;
 
-      margin: 0.3em auto 0;
       border-radius: 3px;
       padding: 0.7rem 1.7rem;
 

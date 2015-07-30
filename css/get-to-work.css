@@ -1,0 +1,186 @@
+div#header nav {
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+#static-map-section {
+  clear: both;
+  background: #76b7e4;
+  position: relative;
+  min-height: 380px; }
+
+.static-map {
+  width: 100%;
+  max-width: 1024px;
+  display: block; }
+
+.we-did-it {
+  background: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  max-width: 480px;
+  text-align: center;
+  top: 20px;
+  left: 50%;
+  margin-left: -240px;
+  padding-bottom: 30px;
+  border-radius: 3px; }
+
+.we-did-it p {
+  font-size: 14px;
+  margin-left: 40px;
+  margin-right: 40px; }
+
+.activity-select {
+  font-size: 12px; }
+
+.activity-select-wrapper-wrapper {
+  margin-bottom: 1em; }
+
+a.get-to-work {
+  padding: 3px 8px;
+  background-color: #43bc65;
+  color: white;
+  font-size: 11px;
+  vertical-align: middle;
+  border-radius: 3px;
+  display: inline-block; }
+
+a.get-to-work.get-to-work-big {
+  font-weight: bold;
+  font-size: 12px;
+  background-color: #43bc65;
+  padding: 12px 32px;
+  letter-spacing: 0.15em;
+  margin: 0.3em auto 0;
+  border-radius: 3px;
+  padding: 0.7rem 1.7rem; }
+
+a.get-to-work.get-to-work-big:hover {
+  text-decoration: none;
+  background-color: #43bc65;
+  color: white; }
+
+@media screen and (max-width: 720px) {
+  #static-map-section {
+    width: auto;
+    background: #76b7e4 url(../img/july-29-map.png) scroll center top no-repeat;
+    background-size: auto 100%;
+    padding: 40px 10px; }
+
+  .static-map {
+    display: none; }
+
+  .we-did-it {
+    position: static;
+    margin: 0;
+    padding-top: 1px;
+    max-width: none; } }
+@media screen and (max-width: 780px) {
+  .main-title-area strong {
+    display: block; } }
+@media screen and (min-width: 901px) {
+  .contribute-big {
+    margin-right: 0 !important; } }
+.acitivity-icons img {
+  width: 45px;
+  margin: 0 10px; }
+
+.select {
+  position: relative;
+  display: inline-block;
+  color: #555; }
+
+.select select {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: .5rem 2.25rem .5rem 1rem;
+  line-height: 1.5;
+  color: #555;
+  background-color: #eee;
+  border: 0;
+  border-radius: .25rem;
+  cursor: pointer;
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+/* Undo the Firefox inner focus ring */
+.select select:focus:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000; }
+
+/* Dropdown arrow */
+.select:after {
+  position: absolute;
+  top: 50%;
+  right: 1.25rem;
+  display: inline-block;
+  content: "";
+  width: 0;
+  height: 0;
+  margin-top: -.15rem;
+  pointer-events: none;
+  border-top: .35rem solid;
+  border-right: .35rem solid transparent;
+  border-bottom: .35rem solid transparent;
+  border-left: .35rem solid transparent; }
+
+/* Hover state */
+/* Uncomment if you need it, but be aware of the sticky iOS states.
+.select select:hover {
+  background-color: #ddd;
+}
+*/
+/* Focus */
+.select select:focus {
+  box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem #0074d9; }
+
+/* Active/open */
+.select select:active {
+  color: #fff;
+  background-color: #0074d9; }
+
+/* Hide the arrow in IE10 and up */
+.select select::-ms-expand {
+  display: none; }
+
+/* Media query to target Firefox only */
+@-moz-document url-prefix() {
+  /* Firefox hack to hide the arrow */
+  .select select {
+    text-indent: 0.01px;
+    text-overflow: '';
+    padding-right: 1rem; }
+
+  /* <option> elements inherit styles from <select>, so reset them. */
+  .select option {
+    background-color: #fff; } }
+/* IE9 hack to hide the arrow */
+@media screen and (min-width: 0\0) {
+  .select select {
+    z-index: 1;
+    padding: .5rem 1.5rem .5rem 1rem; }
+
+  .select:after {
+    z-index: 5; }
+
+  .select:before {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    bottom: 0;
+    z-index: 2;
+    content: "";
+    display: block;
+    width: 1.5rem;
+    background-color: #eee; }
+
+  .select select:hover,
+  .select select:focus,
+  .select select:active {
+    color: #555;
+    background-color: #eee; } }
+
+/*# sourceMappingURL=get-to-work.css.map */

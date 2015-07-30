@@ -23,14 +23,9 @@ h5.page-subtitle {
   HEADER AREA
 */
 div#header {
-  padding: 0.5% 1% 1%;
-  border: 1px solid whitesmoke;
-  border-width: 0 0 1px; }
+  padding: 0.5% 1% 1%; }
   div#header a#header-logo {
-    position: absolute;
-    top: 6px;
-    left: 0;
-    padding: 0.5%; }
+    float: left; }
     div#header a#header-logo img {
       height: 50px; }
   div#header nav {
@@ -86,6 +81,7 @@ a {
   a:hover {
     text-decoration: underline; }
   a.contribute {
+    text-transform: uppercase;
     padding: 3px 8px;
     background-color: #ea504e;
     color: white;
@@ -93,13 +89,14 @@ a {
     vertical-align: middle;
     border-radius: 3px;
     display: inline-block; }
+    a.contribute.contribute-nav {
+      float: right; }
     a.contribute.contribute-big {
       font-weight: bold;
       font-size: 12px;
       background-color: #F55B5B;
       padding: 12px 32px;
       letter-spacing: 0.15em;
-      margin: 0.3em auto 0;
       border-radius: 3px;
       padding: 0.7rem 1.7rem; }
       a.contribute.contribute-big:hover {
