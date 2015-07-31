@@ -8,20 +8,16 @@
     <meta name="keywords" content="Bernie Sanders, FeelTheBern, Events, Bernie, #bernie2016, #feelthebern">
     <meta property="og:image" content="http://d2bq2yf31lju3q.cloudfront.net/img/July29_FBMapImage_600px.png" />
     <meta property="og:url" content="http://map.berniesanders.com" />
-    <meta property="og:title" content="Preparing Work Map - Bernie Sanders 2016 Get Ready to Work"/>
+    <meta property="og:title" content="July 29 Nationwide Organizing Meeting - Find Meetings Near You | Bernie Sanders 2016 Events"/>
     <meta property="og:description" content="On July 29th, Bernie is asking Americans from across the country to come together for a series of conversations about how we can organize an unprecedented grassroots movement that takes on the greed of Wall Street and the billionaire class."/>
 
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,800">
     <link href='//api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.css' rel='stylesheet' />
     <link href='//d2bq2yf31lju3q.cloudfront.net/css/map.css?version=1.11' rel='stylesheet' />
-
-    <link href='/css/work-map.css?version=1.11' rel='stylesheet' />
     <link href='//d2bq2yf31lju3q.cloudfront.net/css/custom.css?v=1.11' rel="stylesheet" type="text/css" />
-
-    <link href='/css/work-map.css?version=1.11' rel='stylesheet' />
     <link rel="shortcut icon" href="//d2bq2yf31lju3q.cloudfront.net/favicon.ico">
 
-    <title>Preparing Work Map - Bernie Sanders 2016 Get Ready to Work</title>
+    <title>July 29 Nationwide Organizing Meeting - Find Meetings Near You | Bernie Sanders 2016 Events</title>
   </head>
   <body>
 
@@ -29,6 +25,21 @@
 
 
 <div id='header'>
+  <a id='header-logo' href='/' ><img src='//d2bq2yf31lju3q.cloudfront.net/img/logo.png' style='float: left; margin-left: 10px;' /></a>
+
+  <div class='main-title-area'>
+    <div style='margin-bottom: 4px;'>
+    <strong>3,520&nbsp;Organizing Meetings</strong>&nbsp;&nbsp;<strong style='color: #ea504e;'>104,290 RSVPs <span style='font-size: 0.7em'></span><span id="capacity-counter"></span> </strong>
+
+    </div>
+
+    <span>
+        <span>Sign up to attend a July 29 Organizing Kickoff event! &nbsp;&nbsp;</span>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://map.berniesanders.com" data-text="I'm attending a July 29 meeting for Bernie Sanders' campaign for president! See events near you:" data-related="BernieSanders" data-count="none">Tweet</a>
+      <div class="fb-share-button" data-href="http://map.berniesanders.com" data-layout="button"></div>
+
+  </div>
+
   <nav>
     <ul id="nav">
       <li><a href='https://secure.actblue.com/contribute/page/lets-go-bernie?refcode=heroku_events' class='contribute contribute-big' target='_blank'>Contribute</a></li>
@@ -37,22 +48,60 @@
   <div style='clear: both'></div>
 </div>
 <div></div>
-<section id='map-section'/>
+<section id='map-section' />
+  <div id='map'></div>
+  <div id='map-event-list'>
+    <div id='map-instructions'>
+      <span style="vertical-align: middle;font-weight: 600;">Attend a</span>  <img src="/img/logo.png" style="
+    height: 20px;
 
-  <div id="congratulations-square">
-    <div id='congratulations-left'>
-      <img src='./img/people/01.jpg' class='congratulations-pic'/>
+    vertical-align: middle;
+"> <span style="
+
+vertical-align"> organizing kickoff, july 29</span>
     </div>
-    <div id='congratulations-right'>
-      <h1>We did it!</h1>
-      <p>You have been part of a historical event involving 100,000 people in 3,500 events around the United States. Austin single-origin coffee before they sold out, ea vero pork belly meggings slow-carb sustainable delectus. <strong>Get ready to work!</strong></p>
-      <a href='www.berniesanders.com/work' class='button-work'>
-        Volunteer
-      </a>
-      <div style='text-align: center'>
-        <a id='header-logo' href='/' ><img src='//d2bq2yf31lju3q.cloudfront.net/img/logo.png' style="width: 100px;"/></a>
+      <form id='zip-and-distance' action="#">
+        <div id="error-box"></div>
+        <div id='zipcode-container'>
+          <input type='text' name='zipcode' id='input-text-zipcode' value='' placeholder='Enter zipcode to find events' maxlength='5'/>
+          <input type='submit' id='hidden-submit' style='visibility: hidden; position: absolute; right:0;top:0; z-index: -1;'/>
+        </div>
+        <div id='distance-container'>
+          <ul id='distance-list'>
+              <li>
+                        <input type='radio' id='mile-5' name='distance' value='5' /> <label for='mile-5'>5mi</label></li><li>
+                        <input type='radio' id='mile-10' name='distance' value='10' /> <label for='mile-10'>10mi</label></li><li>
+                        <input type='radio' id='mile-20' name='distance' value='20' /> <label for='mile-20'>20mi</label></li><li>
+                        <input type='radio' id='mile-50' name='distance' value='50' checked='checked' /> <label for='mile-50'>50mi</label></li><li>
+                        <input type='radio' id='mile-100' name='distance' value='100' /> <label for='mile-100'>100mi</label></li><li>
+                        <input type='radio' id='mile-250' name='distance' value='250' /> <label for='mile-250'>250mi</label></li>          </ul>
+
+        </div>
+      </form>
+      <div id='event-results-area'>
+        <h2 id='event-results-count'><span id='event-counter'></span> <span>within</span> <span id='event-distance'></span> <span>of</span>
+          <div id="event-city"></div>
+        </h2>
+        <div id='event-list-area'>
+          <ul id='event-list'>
+          </ul>
+          <div id="footer-area" style="text-align: center; margin-top: 20px; border: solid 3px #EEEEEE; border-width: 3px 0 0 0; padding-top: 10px;">
+            <h5>Bernie 2016</h5>
+            <h5>PO BOx 905</h5>
+            <h5>Burlington, VT 05402</h5>
+
+            <div id="paid-for-bernie-box">
+              Paid for By Bernie 2016
+            </div>
+            <div id="footer-billionaire" style="margin-bottom: 30px;">
+              <svg width="200" height="40">
+                  <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/billionaires.svg" width="200" height="40" x="50%"></image>
+              </svg>
+            </div>
+
+            <sub>© Bernie 2016 | <a href="https://berniesanders.com/privacy-policy/">Privacy Policy</a></sub>
+          </div>
       </div>
-    </div>
   </div>
 </section>
 <footer>
@@ -81,8 +130,7 @@
   <script id='zipcodes-datadump' type='text/plain'></script>
   <script src="//d2bq2yf31lju3q.cloudfront.net/js/jquery.gz"></script>
   <script src='//d2bq2yf31lju3q.cloudfront.net/js/mapbox.gz'></script>
-  <!-- script type='text/javascript' src="//d2bq2yf31lju3q.cloudfront.net/js/bern-map-async.gz?072720151459"></script -->
-  <script type='text/javascript' src="/js/bern-map-async.js"></script>
+  <script type='text/javascript' src="//d2bq2yf31lju3q.cloudfront.net/js/bern-map-async.gz?072720151459"></script>
   <script>
     $.ajax({
       url: '//d2bq2yf31lju3q.cloudfront.net/js/bern-july-29-data.gz',

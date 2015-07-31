@@ -43,6 +43,7 @@ $jq(window).on("resize", function() {
 
   //Change billionaire size ^_-
 
+  // alert("XXX");
   //Media
   if ($jq(window).width() < 720) {
     // alert("X");
@@ -54,7 +55,7 @@ $jq(window).on("resize", function() {
 
     $("input[name='zipcode']").attr("placeholder", "zipcode");
   } else {
-    $("#map-section, #map").height(wH - h - 25).css("marginTop", "auto");
+    // $("#map-section, #map").height(wH - h - 25).css("marginTop", "auto");
     $("#event-list-area").css("maxHeight", wH - h - (padding * 2) - 240 - 25)
     $("#map-event-list").css("top", "20px");
     $("input[name='zipcode']").attr("placeholder", "Enter zipcode to find events");

@@ -1,0 +1,60 @@
+div#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 98% !important;
+  padding: 0 1% 10px !important;
+  background: transparent;
+  border: none;
+  z-index: 100; }
+  div#header a#header-logo {
+    padding: 0; }
+  div#header nav ul {
+    margin: 10px 0 5px; }
+
+#map-section {
+  height: 100vh !important;
+  background-image: url(../img/map-img.png);
+  background-size: cover;
+  background-position: center right; }
+  #map-section #congratulations-square {
+    width: 90%;
+    margin-left: 50%;
+    transform: translate(-50%, 18%);
+    position: relative;
+    height: 75vh;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 20px; }
+    #map-section #congratulations-square #congratulations-left {
+      width: 50%;
+      height: 100%;
+      float: left;
+      border-radius: 20px 0 0 20px;
+      overflow: hidden; }
+      #map-section #congratulations-square #congratulations-left img {
+        width: 100%;
+        margin-left: 50%;
+        margin-top: 50%;
+        transform: translate(-50%, -50%); }
+    #map-section #congratulations-square #congratulations-right {
+      width: 50%;
+      float: right;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 0 20px 20px 0;
+      height: 100%; }
+      #map-section #congratulations-square #congratulations-right h1 {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 2.8em;
+        margin: 0.5em 0 0 5%;
+        color: #F55B5B;
+        text-align: left;
+        text-shadow: 0 1px 0 rgba(255, 255, 0, 0.4); }
+      #map-section #congratulations-square #congratulations-right p {
+        padding: 0 5%;
+        line-height: 1.7;
+        font-size: 1.4em;
+        text-align: justify;
+        color: #333333; }
+
+/*# sourceMappingURL=work-map.css.map */
