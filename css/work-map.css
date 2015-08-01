@@ -11,6 +11,8 @@ div#header {
     padding: 0; }
   div#header nav ul {
     margin: 10px 0 5px; }
+    div#header nav ul li > * {
+      vertical-align: middle; }
 
 #map-section {
   height: 100vh !important;
@@ -31,15 +33,44 @@ div#header {
       float: left;
       border-radius: 20px 0 0 20px;
       overflow: hidden; }
-      #map-section #congratulations-square #congratulations-left img {
+      #map-section #congratulations-square #congratulations-left #camera-setup {
+        position: relative;
         width: 100%;
-        margin-left: 50%;
-        margin-top: 50%;
-        transform: translate(-50%, -50%); }
+        height: 100%; }
+        #map-section #congratulations-square #congratulations-left #camera-setup .camera_wrap {
+          width: 100%;
+          height: 100%; }
+          #map-section #congratulations-square #congratulations-left #camera-setup .camera_wrap .camera-item {
+            position: absolute;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            width: inherit;
+            height: inherit;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: none; }
+            #map-section #congratulations-square #congratulations-left #camera-setup .camera_wrap .camera-item .camera_caption_container {
+              position: relative;
+              background-size: cover;
+              background-position: center center;
+              width: 100%;
+              height: 100%; }
+              #map-section #congratulations-square #congratulations-left #camera-setup .camera_wrap .camera-item .camera_caption_container .camera_caption {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                background-color: rgba(0, 0, 0, 0.6);
+                color: white;
+                font-size: 0.7em;
+                padding: 0.2em 0.6em 0.2em 0.4em;
+                text-transform: none;
+                font-weight: normal;
+                letter-spacing: 0.04em; }
     #map-section #congratulations-square #congratulations-right {
       width: 50%;
       float: right;
-      background-color: rgba(255, 255, 255, 0.9);
+      background-color: rgba(255, 255, 255, 0.94);
       border-radius: 0 20px 20px 0;
       height: 100%; }
       #map-section #congratulations-square #congratulations-right h1 {
@@ -49,12 +80,29 @@ div#header {
         margin: 0.5em 0 0 5%;
         color: #F55B5B;
         text-align: left;
-        text-shadow: 0 1px 0 rgba(255, 255, 0, 0.4); }
+        text-shadow: 0 1px 0 rgba(255, 255, 0, 0.4);
+        font-weight: normal; }
       #map-section #congratulations-square #congratulations-right p {
         padding: 0 5%;
-        line-height: 1.7;
-        font-size: 1.4em;
+        line-height: 2;
+        font-size: 1.1em;
         text-align: justify;
         color: #333333; }
+      #map-section #congratulations-square #congratulations-right .button-work {
+        color: white;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        padding: 0.5em 2em;
+        display: inline-block;
+        background-color: #43bc65;
+        font-weight: bold;
+        border-radius: 2px;
+        margin: 20px 0 40px;
+        text-decoration: none; }
+        #map-section #congratulations-square #congratulations-right .button-work:hover {
+          background-color: #35924F; }
+
+/* For Phones! */
 
 /*# sourceMappingURL=work-map.css.map */
