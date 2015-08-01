@@ -159,5 +159,71 @@ $phone-max-width: 720px;
 @media only screen
   and (min-width: $phone-min-width)
   and (max-width: $phone-max-width) {
+  footer {
+    display: block !important;
+    position: relative;
+  }
+  body {
+    #map-section {
+      background-image: none;
+      min-height: 0;
+      height: 100% !important;
+      box-shadow: none !important;
+      // overflow: auto;
+      display: block;
+      padding-bottom: 2em;
 
+      #congratulations-square {
+        width: 100%;
+        border-radius: 0;
+        transform: translate(0,0);
+        margin: 0;
+        position: relative;
+        height: auto !important;
+        box-shadow: none;
+
+        #congratulations-left, #congratulations-right {
+          float: none;
+          width: 100%;
+          border-radius: 0;
+          width: 100vmin;
+          height: 100vmin;
+          clear: both;
+          box-shadow: none;
+        }
+        #congratulations-left {
+          background-position: center bottom;
+        }
+        #congratulations-right {
+            min-height: auto !important;
+            height: auto !important;
+
+            h1 { font-size: 2em; }
+        }
+      }
+    }
+  }
+  div#header {
+    width: 100% !important;
+    padding: 0 !important;
+    display: block;
+    position: relative;
+    nav {
+      display: block;
+      margin: 0 !important; padding: 0;
+      ul#nav {
+        margin: 0 !important; padding: 0;
+        li#social { display: none; }
+        li#contribute {
+          margin: 0; padding: 0;
+          a {
+            margin:0;
+            width: 100%;
+            padding: 0.9em 0;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
 }

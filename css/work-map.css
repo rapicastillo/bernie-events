@@ -104,5 +104,63 @@ div#header {
           background-color: #35924F; }
 
 /* For Phones! */
+@media only screen and (min-width: 320px) and (max-width: 720px) {
+  footer {
+    display: block !important;
+    position: relative; }
+
+  body #map-section {
+    background-image: none;
+    min-height: 0;
+    height: 100% !important;
+    box-shadow: none !important;
+    display: block;
+    padding-bottom: 2em; }
+    body #map-section #congratulations-square {
+      width: 100%;
+      border-radius: 0;
+      transform: translate(0, 0);
+      margin: 0;
+      position: relative;
+      height: auto !important;
+      box-shadow: none; }
+      body #map-section #congratulations-square #congratulations-left, body #map-section #congratulations-square #congratulations-right {
+        float: none;
+        width: 100%;
+        border-radius: 0;
+        width: 100vmin;
+        height: 100vmin;
+        clear: both;
+        box-shadow: none; }
+      body #map-section #congratulations-square #congratulations-left {
+        background-position: center bottom; }
+      body #map-section #congratulations-square #congratulations-right {
+        min-height: auto !important;
+        height: auto !important; }
+        body #map-section #congratulations-square #congratulations-right h1 {
+          font-size: 2em; }
+
+  div#header {
+    width: 100% !important;
+    padding: 0 !important;
+    display: block;
+    position: relative; }
+    div#header nav {
+      display: block;
+      margin: 0 !important;
+      padding: 0; }
+      div#header nav ul#nav {
+        margin: 0 !important;
+        padding: 0; }
+        div#header nav ul#nav li#social {
+          display: none; }
+        div#header nav ul#nav li#contribute {
+          margin: 0;
+          padding: 0; }
+          div#header nav ul#nav li#contribute a {
+            margin: 0;
+            width: 100%;
+            padding: 0.9em 0;
+            display: inline-block; } }
 
 /*# sourceMappingURL=work-map.css.map */
