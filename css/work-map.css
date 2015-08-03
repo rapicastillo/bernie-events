@@ -156,11 +156,13 @@ div#header {
           display: none; }
         div#header nav ul#nav li#contribute {
           margin: 0;
-          padding: 0; }
+          padding: 0;
+          border-radius: 0 !important; }
           div#header nav ul#nav li#contribute a {
             margin: 0;
             width: 100%;
             padding: 0.9em 0;
-            display: inline-block; } }
+            display: inline-block;
+            border-radius: 0 !important; } }
 
 /*# sourceMappingURL=work-map.css.map */

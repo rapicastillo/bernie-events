@@ -216,11 +216,13 @@ $phone-max-width: 720px;
         li#social { display: none; }
         li#contribute {
           margin: 0; padding: 0;
+          border-radius: 0 !important;
           a {
             margin:0;
             width: 100%;
             padding: 0.9em 0;
             display: inline-block;
+            border-radius: 0 !important;
           }
         }
       }

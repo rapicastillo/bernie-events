@@ -226,12 +226,12 @@
 
 
       var intervalHandler;
-      var constants = { imageLocation: "img/people/" };
+      var constants = { imageLocation: "//d2bq2yf31lju3q.cloudfront.net/img/people/" };
       d3.select("div#congratulations-left div.camera_wrap")
         .selectAll("div")
         .data(pics)
         .enter().append("div")
-            .attr("data-src", function(d) { return "img/people/" + d.url; })
+            .attr("data-src", function(d) { return constants.imageLocation + d.url; })
             .classed("camera-item", true)
             .style("background-image", function(d) { return "url(" + constants.imageLocation + d.url +")"; })
             .html(function(d) {
