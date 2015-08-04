@@ -35,7 +35,13 @@ div#header {
   #congratulations-square {
     width: 90%;
     margin-left: 50%;
+    display: inline-block;
     transform: translate(-50%, 18%);
+    -webkit-transform: translate(-50%,18%);
+    -ms-transform: translate(-50%, 18%);
+    -moz-transform: translate(-50%, 18%);
+    -o-transform: translate(-50%, 18%);
+
     position: relative;
     height: 75vh;
     box-shadow: 0px 4px 4px rgba(0,0,0, 0.2);
@@ -176,7 +182,12 @@ $phone-max-width: 720px;
       #congratulations-square {
         width: 100%;
         border-radius: 0;
-        transform: translate(0,0);
+        transform: translate(-50%, 18%);
+        -ms-transform: translate(0,0);
+        -webkit-transform: translate(0,0);
+        -moz-transform: translate(0,0);
+        -o-transform: translateY(0,0);
+        // transform: translateY(-50%, 18%);
         margin: 0;
         position: relative;
         height: auto !important;
