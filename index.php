@@ -41,7 +41,6 @@
       <div id='event-list-area'>
         <ul id='event-list'>
         </ul>
-        <p style='text-align: center; margin-top: 20px;'><img src='./img/list-end.png' width='100px'/></p>
       </div>
   </div>
 </section>

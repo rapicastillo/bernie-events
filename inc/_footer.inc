@@ -1,13 +1,11 @@
-
 <footer>
-  <div id='social'>
-    <a href='https://secure.actblue.com/contribute/page/reddit-for-bernie' class='contribute' target='_blank'>Contribute to the Campaign</a>
-    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.bernie2016events.org" data-text="Discover meetups and events about @BernieSanders near you #Bernie2016 #FeelTheBern @BernieMeetups" data-related="RedditForSanders">Tweet</a>
-  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-  <div class="fb-share-button" data-href="http://www.bernie2016events.org" data-layout="button_count"></div>
-  </div>
-  <sub style='color: #999999; text-align: center;' >
-    &reg; <a href='http://www.reddit.com/r/SandersForPresident' target='_blank'>Reddit for Bernie 2016</a>. This site is not affiliated with the Official Bernie Sanders 2016 Campaign. <a target='_blank' href='mailto:rapi@bernie2016events.org' target="_blank">Contact us</a></sub>
+  <p class="address">Bernie 2016<br>PO Box 905<br>Burlington, VT 05402</p>
+  <p class="site-title">Paid for by Bernie 2016</p>
+  <span class="billionaires">
+  <svg viewBox="0 0 350 47"><use xlink:href="/img/billionaires.svg#billionaires"></use></svg>
+  (not the billionaires)
+  </span>
+  <p><span class="copyright">© Bernie 2016</span> | <a href="http://www.berniesanders.com/privacy-policy">Privacy Policy</a></p>
 </footer>
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
